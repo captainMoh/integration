@@ -1,0 +1,146 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(129, 236, 129);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, .7);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#demenagement {
+    color: #238540;
+}
+
+#meuble {
+    font-weight: bolder;
+}
+
+.header .boutons-devis-numero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.header .boutons-devis-numero button {
+    padding: 20px 30px;
+    border: none;
+    font-size: x-large;
+    color: aliceblue;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: black 2px;
+}
+
+
+#btn1 {
+    background-color: #1eb8a1;
+}
+
+#btn2 {
+    background-color: #238540;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    color: #238540;
+    font-weight: 800;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    padding: 10px;
+    border-right: solid 1px rgb(131, 123, 123);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.nav ul li:hover {
+    background-color: #238540;
+    color: white;
+}
+
+.resume {
+    padding: 10px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    height: 500px;
+    color: white;
+    background: url('./assets/demmove-bg3.jpg') center/cover no-repeat;
+}
+
+.slider-container .outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider-container h1 {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.slider-container h2 {
+    position: relative;
+    z-index: 2;
+    padding: 10px 0;
+    border: 1px solid white;
+}
